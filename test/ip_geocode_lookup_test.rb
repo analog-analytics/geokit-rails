@@ -4,6 +4,9 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id'
 end
 
+# Ignore missing helper exceptions
+MissingSourceFile::REGEXPS << [/^cannot load such file -- (.+)$/i, 1]
+
 class LocationAwareController < ActionController::Base #:nodoc: all
   geocode_ip_address
   
