@@ -12,9 +12,9 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = ">= 1.3.6"
 
-  s.add_runtime_dependency 'activerecord', '~> 2.0'
-  s.add_runtime_dependency 'activesupport', '~> 2.0'
-  s.add_runtime_dependency 'actionpack', '~> 2.0'
+  s.add_runtime_dependency 'activerecord', '>= 2.0'
+  s.add_runtime_dependency 'activesupport', '>= 2.0'
+  s.add_runtime_dependency 'actionpack', '>= 2.0'
   s.add_runtime_dependency 'geokit', '~> 1.6.5'
 
   s.add_development_dependency "rake"
